@@ -1,0 +1,9 @@
+node_modules
+.next
+.env*
+!.env.example
+platform-key.json
+*.key.json
+next-env.d.ts
+*.tsbuildinfo
+.vercel
