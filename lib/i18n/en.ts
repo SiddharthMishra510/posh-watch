@@ -19,14 +19,14 @@ export const en: Dict = {
   },
   home: {
     title: "Does your workplace have a POSH Internal Committee?",
-    lead: "Every workplace in India with 10 or more employees must have an Internal Committee under the POSH Act, 2013. If yours does not, tell us without giving your name. We check the facts and ask the district authorities to inspect.",
+    lead: "Every workplace in India with 10 or more employees must have an Internal Committee under the [POSH Act, 2013](https://www.indiacode.nic.in/bitstream/123456789/15102/1/sexual_harassment_at_workplace_act_sw.pdf). If yours does not, tell us without giving your name. We check the facts and ask the district authorities to inspect.",
     ctaReport: "Report a workplace",
     ctaCovered: "Check if it applies",
     howTitle: "How it works",
     steps: [
       { t: "You report, anonymously", d: "No name, phone or email needed. Your report is encrypted on your device before it is sent. You get a receipt code." },
       { t: "We check the facts", d: "That the business exists, has 10 or more employees, and has no Internal Committee listed on the government's SHe-Box portal." },
-      { t: "We write to the District Officer", d: "A formal letter asks for an inspection under Section 25 of the POSH Act. The letter does not say who you are." },
+      { t: "We write to the District Officer", d: "A formal letter asks for an inspection under [Section 25 of the POSH Act](https://www.indiacode.nic.in/bitstream/123456789/15102/1/sexual_harassment_at_workplace_act_sw.pdf). The letter does not say who you are." },
       { t: "You follow progress", d: "Use your receipt code to see the status and read our messages. We may ask you a question there." },
     ],
     notTitle: "What we do not do",
@@ -38,9 +38,9 @@ export const en: Dict = {
     harassTitle: "If you have been harassed",
     harassLead: "Your rights do not depend on whether your employer has an Internal Committee.",
     harassItems: [
-      "File a complaint on the government's SHe-Box portal: shebox.wcd.gov.in",
-      "Contact the Local Committee of your district through the District Women and Child Development Office.",
-      "Women Helpline: 181. Emergency: 112.",
+      "File a complaint on the government's SHe-Box portal: [shebox.wcd.gov.in](https://shebox.wcd.gov.in)",
+      "Contact the Local Committee of your district through the District Women and Child Development Office. To find it: look up your District Women and Child Development Officer on [womenchild.maharashtra.gov.in](https://womenchild.maharashtra.gov.in), ask at your District Collector's office, or call the Women Helpline on [181](tel:181) and ask for your district's Local Committee.",
+      "Women Helpline: [181](tel:181). Emergency: [112](tel:112).",
     ],
   },
   covered: {

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getDict, isLang } from "@/lib/i18n";
+import { Rich } from "@/components/Rich";
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -9,7 +10,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     <>
       <section className="hero">
         <h1>{t.title}</h1>
-        <p className="lead">{t.lead}</p>
+        <p className="lead"><Rich text={t.lead} /></p>
         <div className="actions">
           <Link className="button primary" href={`/${lang}/report`}>{t.ctaReport}</Link>
           <Link className="button" href={`/${lang}/covered`}>{t.ctaCovered}</Link>
@@ -22,7 +23,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           {t.steps.map((s) => (
             <li key={s.t}>
               <h3>{s.t}</h3>
-              <p>{s.d}</p>
+              <p><Rich text={s.d} /></p>
             </li>
           ))}
         </ol>
@@ -36,7 +37,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <div className="panel panel-warm">
           <h2>{t.harassTitle}</h2>
           <p>{t.harassLead}</p>
-          <ul>{t.harassItems.map((i) => <li key={i}>{i}</li>)}</ul>
+          <ul>{t.harassItems.map((i) => <li key={i}><Rich text={i} /></li>)}</ul>
         </div>
       </section>
     </>
